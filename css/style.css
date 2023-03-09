@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Logo + redes sociais */
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.logo{
+    width: 230px;
+    height: 70px;
+}
+.menu{
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+}
+.menu_login a{
+    height: 70px;
+    width: 70px;
+    color: #174c4f;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.menu_ig a{
+    height: 70px;
+    width: 70px;
+    color: #174c4f;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    right: 70px;
+    top: 0px;
+}
+.menu_fb a{
+    height: 70px;
+    width: 70px;
+    color: #174c4f;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    right: 140px;
+    top: 0px;
+}
+/* Menu */
+.container{
+    text-decoration: none;
+    width: 100%;
+    height: 35px;
+    opacity: 75%;
+    background-color: #464545;
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linha ul{
+    list-style: none;
+    display: flex;
+}
+.linha li{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 5px;
+    font-size: 25px;
+}
+.linha li a, a:hover{
+    text-decoration: none;
+    color: white
+}
+/* Cidade */
+.content{
+    background-image: url(../images/saopaulo.jpg);
+    margin-top: 30px;
+    height: 1000px;
+    width: 100%;
+    display: block;
+}
+.box{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 120px;
+    display: flex;
+    text-align: center;
+    justify-content: center;  
+}
+.frase{
+    font-family: 'Oswald', sans-serif;
+    width: auto;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    padding: 20px;
+}
+/* Texto */
+.descricao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+.texto{
+    max-width: 60%;
+    color: white;
+    background-color: rgba(0, 0, 0, .70)
+}
+/* Outras páginas */
+.links{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+}
+.caixa{
+    width: 35%;
+    height: 250px;
+    border: 1px solid #333;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .70);
+
+}
+.caixa_titulo {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+}
+.caixa_image {
+    margin: 10px 0;
+    font-size: 50px;
+    color: white;
+}
+.caixa_texto{
+    margin: 10px 0;
+    font-size: 14px;
+    color:white;
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&amp;family=Open+Sans+Condensed:wght@300&amp;display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+}
+h2,
+h3 {
+    margin: 10px 10px 0;
+    color: #dc143c;
+    font-weight: 900;
+}
+p {
+    margin-bottom: 10px;
+}
+hr {
+    margin: 20px 10px;
+}
+.campos {
+    color: #333;
+    margin: 5px auto;
+    padding: 10px;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+}
+.campos label {
+    margin: 5px 0;
+    font-weight: 900;
+    color: #666;
+}
+input,
+textarea {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.em__linha {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.em__linha label,
+.em__linha input {
+    width: 30%;
+    margin: 0 2px;
+}
+textarea {
+    height: 150px;
+    resize: none;
+    outline: none;
+    border: 1px solid #666;
+    padding: 10px;
+}
+.botoes {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.botoes input {
+    width: 200px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    border: 0;
+    background-color: #dc143c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

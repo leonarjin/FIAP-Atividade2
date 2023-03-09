@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cadastro de Restaurantes</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Projeto Traveller - Cadastro de Restaurantes</h2>
+        <form name="dados" id="dados" action="" method="post">
+            <div class="campos">
+                <label for="nome">Nome do Restaurante</label>
+                <input type="text" id="nome" placeholder="ex: Restaurante Gostoso" autofocus required>
+            </div>
+            <hr>
+            <h3>Localização:</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="rua">Rua</label>
+                    <label for="numero">Número</label>
+                    <label for="bairro">Bairro</label>
+                </div>
+                <div class="em__linha">
+                    <input type="text" id="rua" required placeholder="ex: Av. Paulista">
+                    <input type="text" id="numero" required placeholder="ex: 1234">
+                    <input type="text" id="bairro" required placeholder="ex: Cerqueira Cesar">
+                </div>
+            </div>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="cep">Cep</label>
+                    <label for="cidade">Cidade</label>
+                    <label for="estados">Estado</label>
+                </div>
+                <div class="em__linha">
+                    <input type="text" id="cep" required placeholder="ex: 12345-678">
+                    <input type="text" id="numero" required placeholder="ex: São Paulo">
+                    <input list="uf" id="estados" class="lista" required placeholder="ex: Selecione o estado">
+                    <datalist id="uf">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </datalist>
+                </div>
+            </div>
+            <hr>
+            <h3>Contato:</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="telefone">Telefone</label>
+                    <label for="precos">Preço</label>
+                    <label for="data">Data do Cadastro</label>
+                </div>
+                <div class="em__linha">
+                    <input type="tel" id="telefone" required placeholder="ex: 00-1234-5678">
+                    <input list="preco" id="precos" class="lista" required
+                        placeholder="ex: Selecione o preço">
+                        <datalist id="preco">
+                            <option value="$"></option>
+                            <option value="$$"></option>
+                            <option value="$$$"></option>
+                            <option value="$$$$"></option>
+                        </datalist>
+                    <input type="date" id="data" required>
+                </div>
+            </div>
+            <hr>
+            <h3>Outras informações:</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="valet">Valet</label>
+                    <label for="email">E-mail</label>
+                    <label for="dataCadastro">Site</label>
+                </div>
+                <div class="em__linha">
+                    <input list="vallet" id="vallets" class="lista" required
+                        placeholder="ex: Selecione">
+                        <datalist id="vallet">
+                            <option value="Sim"></option>
+                            <option value="Não"></option>
+                        </datalist>
+                    <input type="email" id="email" required placeholder="ex: Omelhor@restaurante.com">
+                    <input type="url" id="site" required placeholder="ex: www.restaurante.com">
+                </div>
+            </div>
+            <div class="campos">
+                <label for="informacoes">Mais informações</label>
+                <textarea name="" id="informações" placeholder="Informações adicionais"></textarea>
+            </div>
+            <div class="botoes">
+                <input type="submit" value="Gravar Restaurante">
+            </div>
+            <div>
+                <a href="../index.html">Voltar ao Home</a>
+            </div>
+          
+        </form>
+    </div>
+</body>
