@@ -24,7 +24,13 @@ body{
     font-size: 30px;
     font-weight: 800;
 }
+@media only screen and (max-width: 400px) {
+    .menu_ig, .menu_fb{
+        display: none;
+    }
+}
 .menu_login a{
+    
     height: 70px;
     width: 70px;
     color: #174c4f;
@@ -57,7 +63,6 @@ body{
     right: 140px;
     top: 0px;
 }
-/* Menu */
 .container{
     text-decoration: none;
     width: 100%;
@@ -82,14 +87,13 @@ body{
     text-decoration: none;
     color: white;
 }
-/* Cidade */
 .content{
     background-image: url(../images/saopaulo.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 1500px;
     width: 100%;
+    height: 1500px;
     display: block;
 }
 .box{
@@ -104,10 +108,15 @@ body{
 .frase{
     font-family: 'Oswald', sans-serif;
     width: auto;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 700;
     color: white;
-    padding: 20px;
+    padding: 60px 20px;
+}
+@media only screen and (max-width: 600px) {
+    .frase{
+        font-size: 7vw;
+    }
 }
 /* Texto */
 .descricao{
@@ -126,7 +135,6 @@ body{
     padding: 10px;
     box-sizing: border-box;
 }
-/* Outras páginas */
 .links{
     position: relative;
     display: flex;
@@ -163,7 +171,6 @@ body{
     font-size: 14px;
     color:white;
 }
-/* rodapé */
 .rodape{
     position: relative;
     bottom: 0;
@@ -182,4 +189,15 @@ body{
     height: auto;
     width: auto;
     padding-right: 10px;
+}
+@media screen and (min-width: 1920px){
+    .content{
+        height: 2200px;
+    }
+    .descricao{
+        top: 35%;
+    }
+    .links{
+        top: 50%;
+    }
 }
