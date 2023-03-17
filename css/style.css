@@ -2,6 +2,7 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background-color: #333;
 }
 /* Logo + redes sociais */
 .header{
@@ -10,7 +11,6 @@ body{
     background: #bdc3c7;  
     background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);  
     background: linear-gradient(to left, #2c3e50, #bdc3c7); 
-
     position: fixed;
     top: 0;
     z-index: 1;
@@ -67,35 +67,38 @@ body{
     position: relative;
     top: 70px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 .linha ul{
     list-style: none;
     display: flex;
+    padding: 0;
 }
 .linha li{
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0 5px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .linha li a, a:hover{
     text-decoration: none;
-    color: white
+    color: white;
 }
 /* Cidade */
 .content{
     background-image: url(../images/saopaulo.jpg);
-    margin-top: 30px;
-    height: 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1500px;
     width: 100%;
     display: block;
 }
 .box{
     width: 100%;
-    height: 300px;
+    height: 15%;
     position: relative;
-    top: 120px;
+    top: 15%;
     display: flex;
     text-align: center;
     justify-content: center;  
@@ -103,7 +106,7 @@ body{
 .frase{
     font-family: 'Oswald', sans-serif;
     width: auto;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     color: white;
     padding: 20px;
@@ -115,7 +118,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 200px;
+    top: 30%;
 }
 .texto{
     max-width: 60%;
@@ -128,11 +131,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 300px;
+    top: 40%;
 }
 .caixa{
     width: 35%;
-    height: 250px;
+    height: 40%;
     border: 1px solid #333;
     margin: 0 10px;
     display: flex;
@@ -158,4 +161,24 @@ body{
     margin: 10px 0;
     font-size: 14px;
     color:white;
+}
+/* rodapé */
+.rodape{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    background: #bdc3c7;  
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+}
+.copyright{
+    color: #174c4f;
+    font-size: small;
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    width: auto;
+    padding-right: 10px;
 }
