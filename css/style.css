@@ -104,7 +104,7 @@ body{
 .frase{
     font-family: 'Oswald', sans-serif;
     width: auto;
-    font-size: 50px;
+    font-size: 5vw;
     font-weight: 700;
     color: white;
     padding: 20px;
@@ -116,12 +116,15 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 30%;
+    top: 25%;
 }
 .texto{
     max-width: 60%;
     color: white;
-    background-color: rgba(0, 0, 0, .70)
+    background-color: rgba(0, 0, 0, .70);
+    border: 1px solid #333;
+    padding: 10px;
+    box-sizing: border-box;
 }
 /* Outras páginas */
 .links{
